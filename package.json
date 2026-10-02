@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=26 <27",
+    "npm": ">=12 <13"
+  },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
