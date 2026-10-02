@@ -1,62 +1,101 @@
 # Modern JS Seed
 
-A modern Node.js + TypeScript project seed for building JavaScript/TypeScript applications with a fast, strongly typed, testable, and well-formatted development workflow.
+A modern Node.js + TypeScript project seed with a fast, strongly typed, testable, and well-formatted development workflow.
 
 ## Stack
 
-- Node.js
+- Node.js 26
 - TypeScript
 - ESLint
 - Prettier
 - Vitest
 - V8 coverage
 - VS Code workspace configuration
-- Quokka.js for live runtime inspection
+- GitHub Actions CI
+- Quokka.js support
 
 ## Getting Started
 
+Install dependencies:
+
     npm install
 
-## Development Commands
+Run the development checks:
 
     npm run typecheck
     npm run lint
     npm run format:check
     npm test
+
+Run test coverage:
+
     npm run coverage
 
-## Format Code
+## Development Commands
+
+### Typecheck
+
+    npm run typecheck
+
+Runs the TypeScript compiler without emitting files.
+
+### Lint
+
+    npm run lint
+
+Runs ESLint across the project.
+
+### Format
 
     npm run format
 
-## Tooling
+Formats project files with Prettier.
 
-### TypeScript
+### Format Check
 
-Provides static type checking for the project.
+    npm run format:check
 
-### ESLint
+Checks that files are formatted without modifying them.
 
-Provides JavaScript/TypeScript linting and static analysis.
+### Test
 
-### Prettier
+    npm test
 
-Provides consistent source formatting.
-
-### Vitest
-
-Provides unit testing and watch-mode development.
+Runs the Vitest test suite once.
 
 ### Coverage
 
-Vitest's V8 coverage provider reports which code is exercised by the test suite.
+    npm run coverage
 
-### Quokka.js
-
-Provides live runtime evaluation and inline values inside VS Code.
+Runs the test suite with V8 coverage reporting.
 
 ## VS Code
 
-This project includes workspace settings and recommended extensions under `.vscode/`.
+The project includes workspace configuration under `.vscode/`.
+
+Recommended extensions include:
+
+- ESLint
+- Prettier
+- Vitest
+- Quokka.js
 
 Open the project in VS Code and install the recommended extensions when prompted.
+
+## Continuous Integration
+
+GitHub Actions automatically runs the project's quality checks on pushes to `main` and pull requests targeting `main`.
+
+CI verifies:
+
+- TypeScript
+- ESLint
+- Prettier formatting
+- Tests
+- Test coverage
+
+## Using This Seed
+
+This repository is intended to be used as a starting point for new JavaScript and TypeScript projects.
+
+After creating a project from the seed, update the package name, description, and source code for your application.

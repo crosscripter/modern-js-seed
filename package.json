@@ -1,8 +1,9 @@
 {
-  "name": "modern-js-lab",
+  "name": "modern-js-seed",
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "description": "A modern Node.js and TypeScript project seed with ESLint, Prettier, Vitest, coverage, VS Code configuration, and GitHub Actions CI.",
   "engines": {
     "node": ">=26 <27",
     "npm": ">=12 <13"
